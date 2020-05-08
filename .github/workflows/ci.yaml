@@ -30,5 +30,4 @@ jobs:
     - name: Run and build
       run: |
         npm install
-        react-native start
         

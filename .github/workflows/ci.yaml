@@ -6,7 +6,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: [10, 12]
+        node_version: [8, 10, 12]
         os: [windows-latest]
 
     steps:
@@ -20,5 +20,4 @@ jobs:
     - name: npm install, build
       run: |
         npm install
-        react-native start
-        react-native run-android
+        npm run build --if-present
